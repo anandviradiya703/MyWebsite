@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name - Portfolio</title>
+    <style>
+        :root {
+   --primary-color: #3498db;
+   --secondary-color: #2c3e50;
+   --text-color: #333;
+   --bg-color: #ecf0f1;
+   --section-padding: 80px 0;
+}
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+body {
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   line-height: 1.6;
+   color: var(--text-color);
+   background-color: var(--bg-color);
+}
+
+.container {
+   max-width: 1200px;
+   margin: auto;
+   padding: 0 20px;
+}
+
+header {
+   background: var(--secondary-color);
+   color: #fff;
+   padding: 1rem;
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   z-index: 100;
+   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+nav ul {
+   display: flex;
+   list-style: none;
+   justify-content: center;
+}
+
+nav ul li {
+   margin: 0 15px;
+}
+
+nav ul li a {
+   color: #fff;
+   text-decoration: none;
+   font-weight: bold;
+   transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+   color: var(--primary-color);
+}
+
+section {
+   padding: var(--section-padding);
+}
+
+h2 {
+   text-align: center;
+   margin-bottom: 40px;
+   color: var(--secondary-color);
+}
+
+#home {
+   height: 100vh;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+   background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://source.unsplash.com/random/1920x1080?nature') no-repeat center center/cover;
+   color: #fff;
+}
+
+#home img {
+   width: 200px;
+   border-radius: 50%;
+   margin-bottom: 1rem;
+   border: 5px solid var(--primary-color);
+   transition: transform 0.3s ease;
+}
+
+#home img:hover {
+   transform: scale(1.1);
+}
+
+#home h1 {
+   font-size: 3rem;
+   margin-bottom: 0.5rem;
+}
+
+#home p {
+   font-size: 1.5rem;
+}
+
+.skills {
+   display: flex;
+   justify-content: center;
+   flex-wrap: wrap;
+}
+
+.skill {
+   background: #fff;
+   padding: 1.5rem;
+   margin: 0.5rem;
+   text-align: center;
+   flex: 0 1 200px;
+   border-radius: 10px;
+   box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+   transition: transform 0.3s ease;
+}
+
+.skill:hover {
+   transform: translateY(-5px);
+}
+
+.education {
+   background: #fff;
+}
+
+.education ul {
+   list-style: none;
+}
+
+.education li {
+   margin-bottom: 20px;
+   padding: 20px;
+   background: var(--bg-color);
+   border-radius: 10px;
+   box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+footer {
+   background: var(--secondary-color);
+   color: #fff;
+   text-align: center;
+   padding: 1rem;
+}
+
+@media (max-width: 768px) {
+   nav ul {
+       flex-direction: column;
+       text-align: center;
+   }
+
+   nav ul li {
+       margin-bottom: 0.5rem;
+   }
+
+   #home h1 {
+       font-size: 2.5rem;
+   }
+
+   #home p {
+       font-size: 1.2rem;
+   }
+}
+
+@keyframes fadeIn {
+   from { opacity: 0; }
+   to { opacity: 1; }
+}
+
+.fade-in {
+   animation: fadeIn 1s ease-in;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#education">Education</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="fade-in">
+            <img src="profile_image.jpg" alt="Your Name">
+            <h1>Anand Viradiya</h1>
+            <p>Web Developer</p>
+        </section>
+
+        <section id="about" class="container fade-in">
+            <h2>About Me</h2>
+            <p>I'm a passionate web developer with a keen eye for development and a love for creating seamless user experiences. With expertise in front-end  technologies, I strive to build innovative and efficient web solutions that make a difference.</p>
+        </section>
+
+        <section id="skills" class="container fade-in">
+            <h2>My Skills</h2>
+            <div class="skills">
+                <div class="skill">HTML5</div>
+                <div class="skill">CSS3</div>
+                <div class="skill">Bootstrap</div>
+                <div class="skill">Javascript</div>
+                <div class="skill">Python</div>
+            </div>
+        </section>
+
+        <section id="education" class="education fade-in">
+            <div class="container">
+                <h2>Education</h2>
+                <ul>
+                    <li>
+                        <h3>Bachelor of Computer Appliction</h3>
+                        <p>Veer Narmad South Gujarat University, 2022-2025</p>
+                    </li>
+                    <li>
+                        <h3>HSC</h3>
+                        <p>Ashadeep International School, 2022</p>
+                    </li>
+                    <li>
+                     <h3>SSC</h3>
+                     <p>Ashadeep International School, 2020</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
+ 
+    <footer>
+        <p>&copy; 2024 Anand viradiya. All rights reserved.</p>
+    </footer>
+
+   <script>
+          // Smooth scrolling for navigation links
+          document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+         anchor.addEventListener('click', function (e) {
+             e.preventDefault();
+
+             document.querySelector(this.getAttribute('href')).scrollIntoView({
+                 behavior: 'smooth'
+             });
+         });
+     });
+
+     // Add active class to navigation items and trigger fade-in animation
+     window.addEventListener('scroll', () => {
+         let current = '';
+         document.querySelectorAll('section').forEach(section => {
+             const sectionTop = section.offsetTop;
+             if (pageYOffset >= sectionTop - 60) {
+                 current = section.getAttribute('id');
+                 section.classList.add('fade-in');
+             }
+         });
+
+         document.querySelectorAll('nav ul li a').forEach(li => {
+             li.classList.remove('active');
+             if (li.getAttribute('href').substring(1) === current) {
+                 li.classList.add('active');
+             }
+         });
+     });
+   </script>
+
+</body>
